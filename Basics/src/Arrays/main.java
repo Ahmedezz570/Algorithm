@@ -1,6 +1,8 @@
+package Arrays;
+
 import java.util.Arrays;
 
-public class Arrayss {
+public class main {
     public static void main(String[] args) {
         int [] arr1 = new int[5];
         int [] arr2 = {8,2,3,4,5};
@@ -14,12 +16,12 @@ public class Arrayss {
             System.out.println(arr2[i]);
             System.out.println("index of array = "+" " +i);
         }
-     // using for-each
+        // using for-each
         for (int val : arr2){
             System.out.println("elemet of array using for-each"+" "+val);
         }
 
-     // sum of all element of array
+        // sum of all element of array
         int sum = 0 ;
         for (int i = 0; i <arr2.length ; i++) { // 0 to 4 = 5 times
             sum = sum +arr2[i];
@@ -40,21 +42,21 @@ public class Arrayss {
         if (!found) {
             System.out.println("Not Found");
         }
-      // Find max and min
-      int max = arr2[0];
-      int min = arr2[0];
-      for (int val : arr2){
-          if (val>max) {
-              System.out.println("Val Max =" + val);
-              max = val;
-          }
-          if (val<min) {
-              System.out.println("Val Min =" + val);
-              min = val;
+        // Find max and min
+        int max = arr2[0];
+        int min = arr2[0];
+        for (int val : arr2){
+            if (val>max) {
+                System.out.println("Val Max =" + val);
+                max = val;
+            }
+            if (val<min) {
+                System.out.println("Val Min =" + val);
+                min = val;
 
-      }
+            }
 
-    }
+        }
         System.out.println("Max = " + max);
         System.out.println("Min = " + min);
 
